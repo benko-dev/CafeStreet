@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CafeStreet</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/page-icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <img src="./img/logo_coffe.svg" class="header__logo-icon">
+                    <img src="./img/logo-txt-coffee.svg" alt="CafeStreet" class="header__logo-txt">
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <form class="header__search header__search-menu">
+                            <input type="text" class="header__input" placeholder="Cappuccino">
+                            <button class="header__search-button">
+                                <img src="./img/icons/search-icon.svg" alt="search" class="header__search-icon">
+                            </button>
+                        </form>
+                        <li class="header__el"><a href="#about-us" class="header__link click">About us</a></li>
+                        <li class="header__el"><a href="#menu" class="header__link click">Our Product</a></li>
+                        <li class="header__el"><a href="https://rauliqbal.github.io/" target="_blank" class="header__link click">Designer</a></li>
+                    </ul>
+                </nav>
+                <form class="header__search">
+                    <input type="text" class="header__input" placeholder="Cappuccino">
+                    <button class="header__search-button">
+                        <img src="./img/icons/search-icon.svg" alt="search" class="header__search-icon">
+                    </button>
+                </form>
+                <div id="cart" class="header__cart cart-active">
+                    <img src="./img/icons/cart-icon.svg" alt="cart" class="header__cart-icon">
+                </div>
+                <div id="header__burger" class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__enjoy">
+                <div class="enjoy__container">
+                    <div class="enjoy__article">
+                        <h1 class="enjoy__title title">
+                            Enjoy your <span>coffee</span> before your activity
+                        </h1>
+                        <p class="enjoy__paragraph paragraph">
+                            Boost your productivity and build your mood with a glass of coffee in the morning 
+                        </p>
+                        <div class="enjoy__buttons">
+                            <button type="submit" class="enjoy__button button">
+                                Order now
+                                <div class="button__cart"><img src="./img/icons/cart-white-icon.svg" alt="" class="button__cart-icon"></div>
+                            </button>
+                            <a href="#" class="enjoy__button button-more">More menu</a>
+                        </div>
+                    </div>
+                    <div class="enjoy__product" data-wow-delay=".5s">
+                        <div class="enjoy__image-box">
+                            <div class="enjoy__tag-wrapper tag-call">
+                                <div class="enjoy__tag">Cappuccino</div>
+                            </div>
+                            <div class="enjoy__tag-wrapper tag-rate">
+                                <div class="enjoy__tag">4.8
+                                    <img src="./img/icons/star-icon.svg" alt="rate">
+                                </div>
+                            </div>
+                            <div class="enjoy__tag-wrapper tag-price">
+                                <div class="enjoy__tag">18K</div>
+                            </div>
+                            <img src="./img/background/bg-for-product.png" alt="" class="enjoy__product-bg">
+                            <img src="./img/main__enjoy/hero-product.png" alt="" class="enjoy__coffee-img">
+                        </div>
+                        <div class="enjoy__buttons  buttons-bottom">
+                            <button type="submit" class="enjoy__button button">
+                                Order now
+                                <div class="button__cart"><img src="./img/icons/cart-white-icon.svg" alt="" class="button__cart-icon"></div>
+                            </button>
+                            <a href="#" class="enjoy__button button-more">More menu</a>
+                        </div>
+
+                        <img src="./img/decor/decor-hero.png" class="enjoy__decor">
+                    </div>
+                </div>
+            </section>
+            <section class="main__popular">
+                <div class="popular__container">
+                    <div class="popular__head">
+                        <h2 class="popular__title title">
+                            Popular <span>Now</span>
+                            <img src="./img/decor/decor-popular.png" class="popular__decor">
+                        </h2>
+                    </div>
+                    <div class="popular__list">
+                        <div class="popular__product-wrapper">
+                            <div class="popular__product">
+                                <div class="popular__offer-image">
+                                    <a href="#" class="popular__image-box">
+                                        <img src="./img/main__popular/product1.png" alt="Vanilla Latte" class="popular__img">
+                                    </a>
+                                    <div class="popular__tag-wrapper">
+                                        <div class="popular__tag">
+                                            4.8
+                                            <img src="./img/icons/star-icon.svg" alt="rate" class="popular__tag-rate-icon">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular__offer popular-offer">
+                                    <div class="popular-offer__left">
+                                        <a href="#" class="popular-offer__title">Vanilla Latte</a>
+                                        <div class="popular-offer__radio">
+                                            <div class="popular-offer__temp hot radio-active" data-action="hot">Hot</div>
+                                            <div class="popular-offer__temp cold" data-action="cold">Cold</div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-offer__right">
+                                        <div class="popular-offer__price">21 K</div>
+                                        <div class="popular-offer__cart">
+                                            <img src="./img/icons/cart-white-icon.svg" alt="cart" class="popular-offer__cart-icon">
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="popular__product-wrapper">
+                            <div class="popular__product">
+                                <div class="popular__offer-image">
+                                    <a href="#" class="popular__image-box">
+                                        <img src="./img/main__popular/product2.png" alt="Espresso" class="popular__img">
+                                    </a>
+                                    <div class="popular__tag-wrapper">
+                                        <div class="popular__tag">
+                                            4.8
+                                            <img src="./img/icons/star-icon.svg" alt="rate" class="popular__tag-rate-icon">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular__offer popular-offer">
+                                    <div class="popular-offer__left">
+                                        <a href="#" class="popular-offer__title">Espresso</a>
+                                        <div class="popular-offer__radio">
+                                            <div class="popular-offer__temp hot radio-active" data-action="hot">Hot</div>
+                                            <div class="popular-offer__temp cold" data-action="cold">Cold</div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-offer__right">
+                                        <div class="popular-offer__price">12 K</div>
+                                        <div class="popular-offer__cart">
+                                            <img src="./img/icons/cart-white-icon.svg" alt="cart" class="popular-offer__cart-icon">
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="popular__product-wrapper">
+                            <div class="popular__product">
+                                <div class="popular__offer-image">
+                                    <a href="#" class="popular__image-box">
+                                        <img src="./img/main__popular/product3.png" alt="Hazelnut Latte" class="popular__img">
+                                    </a>
+                                    <div class="popular__tag-wrapper">
+                                        <div class="popular__tag">
+                                            4.8
+                                            <img src="./img/icons/star-icon.svg" alt="rate" class="popular__tag-rate-icon">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular__offer popular-offer">
+                                    <div class="popular-offer__left">
+                                        <a href="#" class="popular-offer__title">Hazelnut Latte</a>
+                                        <div class="popular-offer__radio">
+                                            <div class="popular-offer__temp hot radio-active" data-action="hot">Hot</div>
+                                            <div class="popular-offer__temp cold" data-action="cold">Cold</div>
+                                        </div>
+                                    </div>
+                                    <div class="popular-offer__right">
+                                        <div class="popular-offer__price">23 K</div>
+                                        <div class="popular-offer__cart">
+                                            <img src="./img/icons/cart-white-icon.svg" alt="cart" class="popular-offer__cart-icon">
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        <img src="./img/background/popular-bg.svg" class="popular__decor-bg"></img>
+                        <div class="popular__decor-bg-square"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="delivery" class="main__service">
+                <div class="service__container">
+                    <h2 class="service__title title">How to use delivery <span>service</span></h2>
+                    <div class="service__list">
+                        <div class="service__el">
+                            <img src="./img/main__service/choose-image.png" alt="choose" class="service__icon">
+                            <h3 class="service__headline">choose AC coffee</h3>
+                            <div class="service__more">there are 20+ coffees for you</div>
+                        </div>
+                        <div class="service__el">
+                            <img src="./img/main__service/delivery-image.png" alt="choose" class="service__icon">
+                            <h3 class="service__headline">we delivery it to you</h3>
+                            <div class="service__more">Choose delivery service</div>
+                        </div>
+                        <div class="service__el">
+                            <img src="./img/main__service/enjoy-image.png" alt="choose" class="service__icon">
+                            <h3 class="service__headline">Enjoy your coffee</h3>
+                            <div class="service__more">Choose delivery service</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about-us" class="main__about-us">
+                <div class="about-us__container">
+                    <div class="about-us__image-wrapper">
+                        <img src="./img/main__about-us/cup-of-coffee-image.png" alt="cup of coffee" class="about-us__img">
+                    </div>
+                    <div class="about-us__article about-us-article">
+                        <h2 class="about-us-article__title title">About <span>us</span></h2>
+                        <div class="about-us-article__subtitle">We provide quality coffee, and ready to deliver.</div>
+                        <div class="about-us-article__paragraph paragraph">We are a company that makes and distributes delicious drinks. our main product is made with a secret recipe and available in stores worldwide.</div>
+                        <a href="#" class="about-us-article__button button">Get your coffee</a>
+                    </div>
+                </div>
+            </section>
+            <section id="menu" class="main__menu">
+                <div class="menu__container">
+                    <h2 class="menu__title title">Special menu <span>for you</span></h2>
+                    <div class="menu__product-list">
+                        <div class="product__card">
+                            <a href="#" class="product__image-box">
+                                <div class="menu__tag-wrapper">
+                                    <div class="popular__tag">
+                                        4.8
+                                        <img src="./img/icons/star-icon.svg" alt="rate" class="popular__tag-rate-icon">
+                                    </div>
+                                </div>
+                                <img src="./img/main__menu/product1.png" alt="Sandwich" class="product__image">
+                            </a>
+                            <div class="product__hat">
+                                <a href="#" class="product__title">Sandwich</a>
+                                <div class="product__price">12 K</div>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__descr">bread with meat and vegetables</div>
+                                <div class="product__cart">
+                                    <img src="./img/icons/cart-white-icon.svg" alt="cart" class="product__card-item">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#" class="product__image-box">
+                                <div class="menu__tag-wrapper">
+                                    <div class="popular__tag">
+                                        4.8
+                                        <img src="./img/icons/star-icon.svg" alt="rate" class="popular__tag-rate-icon">
+                                    </div>
+                                </div>
+                                <img src="./img/main__menu/product2.png" alt="Hot Milk" class="product__image">
+                            </a>
+                            <div class="product__hat">
+                                <a href="#" class="product__title">Hot Milk</a>
+                                <div class="product__price">12 K</div>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__descr">Hot Milk with less sugar</div>
+                                <div class="product__cart">
+                                    <img src="./img/icons/cart-white-icon.svg" alt="cart" class="product__card-item">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#" class="product__image-box">
+                                <div class="menu__tag-wrapper">
+                                    <div class="popular__tag">
+                                        4.8
+                                        <img src="./img/icons/star-icon.svg" alt="rate" class="popular__tag-rate-icon">
+                                    </div>
+                                </div>
+                                <img src="./img/main__menu/product3.png" alt="Coffe Ice Cream" class="product__image">
+                            </a>
+                            <div class="product__hat">
+                                <a href="#" class="product__title">Coffe Ice Cream</a>
+                                <div class="product__price">12 K</div>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__descr">Coffe with ice cream vanilla</div>
+                                <div class="product__cart">
+                                    <img src="./img/icons/cart-white-icon.svg" alt="cart" class="product__card-item">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#" class="product__image-box">
+                                <div class="menu__tag-wrapper">
+                                    <div class="popular__tag">
+                                        4.8
+                                        <img src="./img/icons/star-icon.svg" alt="rate" class="popular__tag-rate-icon">
+                                    </div>
+                                </div>
+                                <img src="./img/main__menu/product4.png" alt="Cappucino" class="product__image">
+                            </a>
+                            <div class="product__hat">
+                                <a href="#" class="product__title">Cappucino</a>
+                                <div class="product__price">12 K</div>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__descr">Hot Cappucino</div>
+                                <div class="product__cart">
+                                    <img src="./img/icons/cart-white-icon.svg" alt="cart" class="product__card-item">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#" class="product__image-box">
+                                <div class="menu__tag-wrapper">
+                                    <div class="popular__tag">
+                                        4.8
+                                        <img src="./img/icons/star-icon.svg" alt="rate" class="popular__tag-rate-icon">
+                                    </div>
+                                </div>
+                                <img src="./img/main__menu/product5.png" alt="Moccacinno" class="product__image">
+                            </a>
+                            <div class="product__hat">
+                                <a href="#" class="product__title">Moccacinno</a>
+                                <div class="product__price">12 K</div>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__descr">Hot Moccacino </div>
+                                <div class="product__cart">
+                                    <img src="./img/icons/cart-white-icon.svg" alt="cart" class="product__card-item">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card">
+                            <a href="#" class="product__image-box">
+                                <div class="menu__tag-wrapper">
+                                    <div class="popular__tag">
+                                        4.8
+                                        <img src="./img/icons/star-icon.svg" alt="rate" class="popular__tag-rate-icon">
+                                    </div>
+                                </div>
+                                <img src="./img/main__menu/product6.png" alt="Waffle Ice Crem" class="product__image">
+                            </a>
+                            <div class="product__hat">
+                                <a href="#" class="product__title">Waffle Ice Crem</a>
+                                <div class="product__price">12 K</div>
+                            </div>
+                            <div class="product__footer">
+                                <div class="product__descr">Wafle with Ice cream</div>
+                                <div class="product__cart">
+                                    <img src="./img/icons/cart-white-icon.svg" alt="cart" class="product__card-item">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__reviews">
+                <div data-wow-delay="1s" class="reviews__offer">
+                    <div class="reviews__container">
+                        <div class="reviews__body">
+                            <h2 class="reviews__title title">What they say about us</h2>
+                            <p class="reviews__paragraph paragraph">
+                                We always provide the best service and always maintain the quality of coffee
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slider">
+                    <div class="slider__card">
+                        <div class="slider__image-wrapper">
+                            <img src="./img/main__reviews/user1.png" alt="user photo" class="slider__img">
+                        </div>
+                        <div class="slider__review-wrapper">
+                            <div class="slider__review">
+                                <div class="user__name">Naura</div>
+                                <div class="user__review">
+                                    I really love the cappucino, the coffee was very smooth
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__image-wrapper">
+                            <img src="./img/main__reviews/user2.png" alt="user photo" class="slider__img">
+                        </div>
+                        <div class="slider__review-wrapper">
+                            <div class="slider__review">
+                                <div class="user__name">John</div>
+                                <div class="user__review">
+                                    this coffee shop is very convenient
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__image-wrapper">
+                            <img src="./img/main__reviews/user3.png" alt="user photo" class="slider__img">
+                        </div>
+                        <div class="slider__review-wrapper">
+                            <div class="slider__review">
+                                <div class="user__name">Azura</div>
+                                <div class="user__review">
+                                    the coffee menu here is very much
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews__decor"></div>
+            </section>
+            <section class="main__subscribe">
+                <div class="subscribe__container">
+                    <h2 class="subscribe__title title">Subscribe to get 50% discount price</h2>
+                    <form class="subscribe__form">
+                        <input type="email" class="subscribe__input" placeholder="Email address">
+                        <button class="subscribe__button button">Order now</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/radio.js"></script>
+    <script src="./js/parallax.js"></script>
+</body>
+</html>
